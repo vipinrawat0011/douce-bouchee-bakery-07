@@ -16,8 +16,8 @@ const FeaturedProducts = () => {
       id: 1,
       name: 'Artisan Chocolates',
       description: 'Fine chocolates with unique flavors, handcrafted with premium cocoa.',
-      price: 25,
-      originalPrice: 35,
+      price: 2000,
+      originalPrice: 2800,
       image_url: 'https://images.unsplash.com/photo-1549007994-cb92caebd54b?q=80&w=400&auto=format&fit=crop',
       category: 'Chocolates',
       featured: true,
@@ -27,8 +27,8 @@ const FeaturedProducts = () => {
       id: 2,
       name: 'Gourmet Cookies',
       description: 'Crispy cookies with chocolate chips, nuts and dried fruits.',
-      price: 15,
-      originalPrice: 20,
+      price: 1200,
+      originalPrice: 1600,
       image_url: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=400&auto=format&fit=crop',
       category: 'Cookies',
       featured: false,
@@ -38,8 +38,8 @@ const FeaturedProducts = () => {
       id: 3,
       name: 'Fudgy Brownies',
       description: 'Rich dark chocolate brownies, soft in the center with delicate glaze.',
-      price: 20,
-      originalPrice: 28,
+      price: 1600,
+      originalPrice: 2240,
       image_url: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=400&auto=format&fit=crop',
       category: 'Brownies',
       featured: true,
@@ -49,8 +49,8 @@ const FeaturedProducts = () => {
       id: 4,
       name: 'Mixed Assortments',
       description: 'Discovery gift boxes blending our finest creations.',
-      price: 35,
-      originalPrice: 50,
+      price: 2800,
+      originalPrice: 4000,
       image_url: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=400&auto=format&fit=crop',
       category: 'Assortments',
       featured: false,
@@ -60,8 +60,8 @@ const FeaturedProducts = () => {
       id: 5,
       name: 'French Macarons',
       description: 'Traditional macarons with classic and original flavors.',
-      price: 18,
-      originalPrice: 25,
+      price: 1440,
+      originalPrice: 2000,
       image_url: 'https://images.unsplash.com/photo-1571506165871-ee72608d3ba4?q=80&w=400&auto=format&fit=crop',
       category: 'Macarons',
       featured: false,
@@ -71,8 +71,8 @@ const FeaturedProducts = () => {
       id: 6,
       name: 'Seasonal Creations',
       description: 'Exclusive products according to seasons and holidays.',
-      price: 30,
-      originalPrice: 40,
+      price: 2400,
+      originalPrice: 3200,
       image_url: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=400&auto=format&fit=crop',
       category: 'Seasonal',
       featured: true,
@@ -81,8 +81,8 @@ const FeaturedProducts = () => {
   ];
 
   const handleWhatsAppOrder = (product) => {
-    const WHATSAPP_NUMBER = "15551237938";
-    const message = encodeURIComponent(`Hi, I'd like to order: ${product.name} - $${product.price.toFixed(2)}`);
+    const WHATSAPP_NUMBER = "917711000776";
+    const message = encodeURIComponent(`Hi, I'd like to order: ${product.name} - ₹${product.price}`);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
   };
 
@@ -162,9 +162,14 @@ const FeaturedProducts = () => {
                 <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4 line-clamp-2">
                   {product.description}
                 </p>
+                <div className="mb-2">
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full font-medium">
+                    Made In India 🇮🇳
+                  </span>
+                </div>
                 <div className="flex items-center justify-between">
                   <span className="text-lg sm:text-2xl font-bold text-chocolate">
-                    ${product.price.toFixed(2)}
+                    ₹{product.price}
                   </span>
                   <Button 
                     onClick={(e) => handleWhatsAppOrder(product)} 

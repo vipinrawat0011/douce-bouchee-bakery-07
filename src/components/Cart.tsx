@@ -74,7 +74,7 @@ const Cart = () => {
                 <div className="flex-1 min-w-0">
                   <h4 className="font-medium text-chocolate truncate">{item.name}</h4>
                   <p className="text-sm text-muted-foreground">{item.size}</p>
-                  <p className="font-medium text-chocolate">${item.price}</p>
+                  <p className="font-medium text-chocolate">₹{item.price}</p>
                 </div>
                 
                 <div className="flex items-center space-x-2">
@@ -113,7 +113,7 @@ const Cart = () => {
           <div className="mt-6 space-y-4">
             <div className="flex justify-between items-center text-lg font-semibold">
               <span>Total:</span>
-              <span className="text-chocolate">${getTotalPrice().toFixed(2)}</span>
+              <span className="text-chocolate">₹{getTotalPrice()}</span>
             </div>
             
             <div className="space-y-2">

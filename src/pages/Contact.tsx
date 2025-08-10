@@ -34,32 +34,32 @@ export default function Contact() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="py-20 px-4 sm:px-6 lg:px-8">
+      <main className="py-8 sm:py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16 fade-in">
-            <h1 className="font-playfair text-4xl md:text-6xl font-bold text-chocolate mb-4">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16 fade-in">
+            <h1 className="font-playfair text-3xl sm:text-4xl md:text-6xl font-bold text-chocolate mb-4">
               Visit Our Sweet Haven
             </h1>
-            <p className="text-lg text-rose-gold max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-rose-gold max-w-2xl mx-auto">
               Come experience our artisan bakery in person, or get in touch with any questions
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-4 sm:space-y-6 lg:space-y-8">
               {/* Store Image */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?q=80&w=2089&auto=format&fit=crop"
                   alt="Douce Bouchée Bakery"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-48 sm:h-56 lg:h-64 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-chocolate/80 via-chocolate/20 to-transparent"></div>
-                <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="font-playfair text-2xl font-bold mb-2">Our Bakery</h3>
-                  <p className="text-[#D7B899]">Where magic happens daily</p>
+                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 text-white">
+                  <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold mb-1 sm:mb-2">Our Bakery</h3>
+                  <p className="text-[#D7B899] text-sm sm:text-base">Where magic happens daily</p>
                 </div>
               </div>
 
@@ -68,12 +68,12 @@ export default function Contact() {
                 <Card className="border-0 shadow-lg rounded-2xl hover-lift">
                   <CardContent className="p-4 sm:p-6 text-center">
                     <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 bg-rose-gold/10 rounded-full flex items-center justify-center">
-                      <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-rose-gold" />
+                       <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-rose-gold" />
                     </div>
                     <h3 className="font-semibold text-chocolate mb-2 text-sm sm:text-base">Location</h3>
                     <p className="text-gray-600 text-xs sm:text-sm">
-                      123 Baker Street<br />
-                      Sweet City, SC 12345
+                      Haibowal Kalan<br />
+                      Ludhiana, Punjab
                     </p>
                   </CardContent>
                 </Card>
@@ -85,8 +85,7 @@ export default function Contact() {
                     </div>
                     <h3 className="font-semibold text-chocolate mb-2 text-sm sm:text-base">Phone</h3>
                     <p className="text-gray-600 text-xs sm:text-sm">
-                      (555) 123-SWEET<br />
-                      (555) 123-7938
+                      +91 7711000776
                     </p>
                   </CardContent>
                 </Card>
@@ -111,8 +110,7 @@ export default function Contact() {
                     </div>
                     <h3 className="font-semibold text-chocolate mb-2 text-sm sm:text-base">Email</h3>
                     <p className="text-gray-600 text-xs sm:text-sm">
-                      hello@doucebouchee.com<br />
-                      orders@doucebouchee.com
+                      douchbouchee1@gmail.com
                     </p>
                   </CardContent>
                 </Card>
@@ -135,18 +133,18 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div>
-              <Card className="border-0 shadow-2xl rounded-2xl overflow-hidden">
-                <CardHeader className="bg-gradient-to-r from-chocolate to-[#5A3E37] text-white p-8">
-                  <CardTitle className="font-playfair text-2xl font-bold text-center">
+                <Card className="border-0 shadow-2xl rounded-2xl overflow-hidden">
+                <CardHeader className="bg-gradient-to-r from-chocolate to-[#5A3E37] text-white p-4 sm:p-6 lg:p-8">
+                  <CardTitle className="font-playfair text-xl sm:text-2xl font-bold text-center">
                     Get in Touch
                   </CardTitle>
-                  <p className="text-center text-[#D7B899] mt-2">
+                  <p className="text-center text-[#D7B899] mt-2 text-sm sm:text-base">
                     We'd love to hear from you
                   </p>
                 </CardHeader>
-                <CardContent className="p-8">
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <CardContent className="p-4 sm:p-6 lg:p-8">
+                  <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                       <div>
                         <label className="block text-sm font-medium text-chocolate mb-2">
                           Your Name

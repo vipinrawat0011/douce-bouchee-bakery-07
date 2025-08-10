@@ -20,17 +20,17 @@ const ProductDetail = () => {
       name: 'Artisan Chocolates',
       description: 'Fine chocolates with unique flavors, handcrafted with premium cocoa.',
       longDescription: 'Our signature artisan chocolates are crafted with the finest Belgian cocoa and premium ingredients sourced from around the world. Each piece is hand-molded and decorated with precision, offering a luxurious taste experience that melts perfectly on your palate.',
-      price: 25,
-      originalPrice: 35,
+      price: 2000,
+      originalPrice: 2800,
       image: 'chocolate',
       featured: true,
       rating: 4.8,
       reviews: 124,
       ingredients: ['Premium Belgian Cocoa', 'Madagascar Vanilla', 'Organic Cane Sugar', 'Fresh Cream'],
       sizes: [
-        { name: 'small', label: 'Small Box (6 pieces)', price: 25 },
-        { name: 'medium', label: 'Medium Box (12 pieces)', price: 45 },
-        { name: 'large', label: 'Large Box (24 pieces)', price: 85 }
+        { name: 'small', label: 'Small Box (6 pieces)', price: 2000 },
+        { name: 'medium', label: 'Medium Box (12 pieces)', price: 3600 },
+        { name: 'large', label: 'Large Box (24 pieces)', price: 6800 }
       ]
     },
     {
@@ -38,17 +38,17 @@ const ProductDetail = () => {
       name: 'Gourmet Cookies',
       description: 'Crispy cookies with chocolate chips, nuts and dried fruits.',
       longDescription: 'Baked fresh daily using our grandmother\'s secret recipe, these gourmet cookies combine the perfect balance of crispy edges and chewy centers. Made with premium butter, organic flour, and the finest chocolate chips.',
-      price: 15,
-      originalPrice: 20,
+      price: 1200,
+      originalPrice: 1600,
       image: 'cookies',
       featured: false,
       rating: 4.6,
       reviews: 89,
       ingredients: ['Organic Flour', 'Premium Butter', 'Dark Chocolate Chips', 'Sea Salt'],
       sizes: [
-        { name: 'small', label: 'Half Dozen', price: 15 },
-        { name: 'medium', label: 'Dozen', price: 28 },
-        { name: 'large', label: 'Two Dozen', price: 50 }
+        { name: 'small', label: 'Half Dozen', price: 1200 },
+        { name: 'medium', label: 'Dozen', price: 2240 },
+        { name: 'large', label: 'Two Dozen', price: 4000 }
       ]
     },
     {
@@ -56,17 +56,17 @@ const ProductDetail = () => {
       name: 'Fudgy Brownies',
       description: 'Rich dark chocolate brownies, soft in the center with delicate glaze.',
       longDescription: 'Indulgent fudgy brownies made with premium dark chocolate and a hint of espresso. Each brownie is topped with our signature chocolate glaze and optional nuts for the perfect texture contrast.',
-      price: 20,
-      originalPrice: 28,
+      price: 1600,
+      originalPrice: 2240,
       image: 'brownies',
       featured: true,
       rating: 4.9,
       reviews: 156,
       ingredients: ['Dark Chocolate', 'Espresso', 'Premium Butter', 'Free-Range Eggs'],
       sizes: [
-        { name: 'small', label: '4 pieces', price: 20 },
-        { name: 'medium', label: '9 pieces', price: 42 },
-        { name: 'large', label: '16 pieces', price: 75 }
+        { name: 'small', label: '4 pieces', price: 1600 },
+        { name: 'medium', label: '9 pieces', price: 3360 },
+        { name: 'large', label: '16 pieces', price: 6000 }
       ]
     },
     {
@@ -74,17 +74,17 @@ const ProductDetail = () => {
       name: 'Mixed Assortments',
       description: 'Discovery gift boxes blending our finest creations.',
       longDescription: 'A curated selection of our most popular items, perfect for gifting or trying multiple flavors. Each box contains a variety of chocolates, cookies, and brownies beautifully arranged.',
-      price: 35,
-      originalPrice: 50,
+      price: 2800,
+      originalPrice: 4000,
       image: 'assortment',
       featured: false,
       rating: 4.7,
       reviews: 203,
       ingredients: ['Variety of Premium Ingredients', 'Seasonal Selections', 'Gift Box Included'],
       sizes: [
-        { name: 'small', label: 'Tasting Box', price: 35 },
-        { name: 'medium', label: 'Family Box', price: 65 },
-        { name: 'large', label: 'Celebration Box', price: 120 }
+        { name: 'small', label: 'Tasting Box', price: 2800 },
+        { name: 'medium', label: 'Family Box', price: 5200 },
+        { name: 'large', label: 'Celebration Box', price: 9600 }
       ]
     },
     {
@@ -92,17 +92,17 @@ const ProductDetail = () => {
       name: 'Seasonal Creations',
       description: 'Exclusive products according to seasons and holidays.',
       longDescription: 'Limited-time seasonal specialties that celebrate the flavors of each season. From pumpkin spice in fall to peppermint during winter holidays, these exclusive creations are available for a limited time only.',
-      price: 30,
-      originalPrice: 40,
+      price: 2400,
+      originalPrice: 3200,
       image: 'seasonal',
       featured: true,
       rating: 4.8,
       reviews: 167,
       ingredients: ['Seasonal Fruits', 'Holiday Spices', 'Limited Edition Flavors'],
       sizes: [
-        { name: 'small', label: 'Sample Pack', price: 30 },
-        { name: 'medium', label: 'Holiday Box', price: 55 },
-        { name: 'large', label: 'Celebration Pack', price: 95 }
+        { name: 'small', label: 'Sample Pack', price: 2400 },
+        { name: 'medium', label: 'Holiday Box', price: 4400 },
+        { name: 'large', label: 'Celebration Pack', price: 7600 }
       ]
     },
     {
@@ -110,17 +110,17 @@ const ProductDetail = () => {
       name: 'French Macarons',
       description: 'Traditional macarons with classic and original flavors.',
       longDescription: 'Delicate French macarons made with almond flour and filled with premium ganaches, jams, and buttercreams. Each macaron is carefully aged to achieve the perfect texture and flavor balance.',
-      price: 18,
-      originalPrice: 25,
+      price: 1440,
+      originalPrice: 2000,
       image: 'macarons',
       featured: false,
       rating: 4.5,
       reviews: 134,
       ingredients: ['Almond Flour', 'Premium Ganache', 'Natural Food Coloring', 'Fresh Butter'],
       sizes: [
-        { name: 'small', label: '6 Macarons', price: 18 },
-        { name: 'medium', label: '12 Macarons', price: 34 },
-        { name: 'large', label: '24 Macarons', price: 65 }
+        { name: 'small', label: '6 Macarons', price: 1440 },
+        { name: 'medium', label: '12 Macarons', price: 2720 },
+        { name: 'large', label: '24 Macarons', price: 5200 }
       ]
     }
   ];
@@ -232,15 +232,22 @@ const ProductDetail = () => {
 
               {/* Price */}
               <div className="flex items-center space-x-3">
-                <span className="font-playfair text-3xl font-bold text-chocolate">${currentPrice}</span>
+                <span className="font-playfair text-3xl font-bold text-chocolate">₹{currentPrice}</span>
                 {product.originalPrice > currentPrice && (
-                  <span className="text-xl text-muted-foreground line-through">${product.originalPrice}</span>
+                  <span className="text-xl text-muted-foreground line-through">₹{product.originalPrice}</span>
                 )}
                 {product.originalPrice > currentPrice && (
                   <span className="bg-red-100 text-red-600 px-2 py-1 rounded text-sm font-medium">
-                    Save ${product.originalPrice - currentPrice}
+                    Save ₹{product.originalPrice - currentPrice}
                   </span>
                 )}
+              </div>
+
+              {/* Made In India Badge */}
+              <div className="mt-4">
+                <span className="bg-green-100 text-green-800 px-3 py-2 rounded-full text-sm font-medium">
+                  Made In India 🇮🇳
+                </span>
               </div>
 
               {/* Size Selection */}
@@ -260,7 +267,7 @@ const ProductDetail = () => {
                         />
                         <span className="font-medium">{size.label}</span>
                       </div>
-                      <span className="font-bold text-chocolate">${size.price}</span>
+                      <span className="font-bold text-chocolate">₹{size.price}</span>
                     </label>
                   ))}
                 </div>
@@ -293,7 +300,7 @@ const ProductDetail = () => {
               <div className="flex space-x-4">
                 <Button onClick={handleAddToCart} className="flex-1 bg-chocolate hover:bg-chocolate/90">
                   <ShoppingBag className="mr-2 h-4 w-4" />
-                  Add to Cart - ${(currentPrice * quantity).toFixed(2)}
+                  Add to Cart - ₹{(currentPrice * quantity)}
                 </Button>
                 <Button variant="outline" onClick={handleAddToWishlist}>
                   <Heart className="h-4 w-4" />

@@ -15,9 +15,9 @@ const Products = () => {
       id: 1,
       name: 'Artisan Chocolates',
       description: 'Fine chocolates with unique flavors, handcrafted with premium cocoa.',
-      price: 'From $25',
-      basePrice: 25,
-      originalPrice: 35,
+      price: 'From ₹2000',
+      basePrice: 2000,
+      originalPrice: 2800,
       image: 'chocolate',
       featured: true,
       rating: 4.8,
@@ -27,9 +27,9 @@ const Products = () => {
       id: 2,
       name: 'Gourmet Cookies',
       description: 'Crispy cookies with chocolate chips, nuts and dried fruits.',
-      price: 'From $15',
-      basePrice: 15,
-      originalPrice: 20,
+      price: 'From ₹1200',
+      basePrice: 1200,
+      originalPrice: 1600,
       image: 'cookies',
       featured: false,
       rating: 4.6,
@@ -39,9 +39,9 @@ const Products = () => {
       id: 3,
       name: 'Fudgy Brownies',
       description: 'Rich dark chocolate brownies, soft in the center with delicate glaze.',
-      price: 'From $20',
-      basePrice: 20,
-      originalPrice: 28,
+      price: 'From ₹1600',
+      basePrice: 1600,
+      originalPrice: 2240,
       image: 'brownies',
       featured: true,
       rating: 4.9,
@@ -51,9 +51,9 @@ const Products = () => {
       id: 4,
       name: 'Mixed Assortments',
       description: 'Discovery gift boxes blending our finest creations.',
-      price: 'From $35',
-      basePrice: 35,
-      originalPrice: 50,
+      price: 'From ₹2800',
+      basePrice: 2800,
+      originalPrice: 4000,
       image: 'assortment',
       featured: false,
       rating: 4.7,
@@ -64,8 +64,8 @@ const Products = () => {
       name: 'Seasonal Creations',
       description: 'Exclusive products according to seasons and holidays.',
       price: 'Variable pricing',
-      basePrice: 30,
-      originalPrice: 40,
+      basePrice: 2400,
+      originalPrice: 3200,
       image: 'seasonal',
       featured: true,
       rating: 4.8,
@@ -75,9 +75,9 @@ const Products = () => {
       id: 6,
       name: 'French Macarons',
       description: 'Traditional macarons with classic and original flavors.',
-      price: 'From $18',
-      basePrice: 18,
-      originalPrice: 25,
+      price: 'From ₹1440',
+      basePrice: 1440,
+      originalPrice: 2000,
       image: 'macarons',
       featured: false,
       rating: 4.5,
@@ -138,7 +138,7 @@ const Products = () => {
               {/* Sale Badge */}
               {product.originalPrice > product.basePrice && (
                 <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-medium z-10">
-                  Save ${product.originalPrice - product.basePrice}
+                  Save ₹{product.originalPrice - product.basePrice}
                 </div>
               )}
               
@@ -200,9 +200,14 @@ const Products = () => {
                 <h3 className="font-playfair text-xl font-semibold text-chocolate mb-2">
                   {product.name}
                 </h3>
-                <p className="font-inter text-muted-foreground mb-4 text-sm leading-relaxed line-clamp-2">
+                <p className="font-inter text-muted-foreground mb-2 text-sm leading-relaxed line-clamp-2">
                   {product.description}
                 </p>
+                <div className="mb-4">
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full font-medium">
+                    Made In India 🇮🇳
+                  </span>
+                </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <span className="font-playfair text-lg font-semibold text-chocolate">
@@ -210,7 +215,7 @@ const Products = () => {
                     </span>
                     {product.originalPrice > product.basePrice && (
                       <span className="text-sm text-muted-foreground line-through">
-                        ${product.originalPrice}
+                        ₹{product.originalPrice}
                       </span>
                     )}
                   </div>
