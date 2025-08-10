@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Cart from './Cart';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,14 +35,10 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Cart />
           </nav>
 
-          {/* Mobile menu button and cart */}
-          <div className="flex items-center space-x-4">
-            <div className="md:hidden">
-              <Cart />
-            </div>
+          {/* Mobile menu button */}
+          <div className="flex items-center">
             <button
               className="md:hidden p-2 text-foreground hover:text-chocolate transition-colors duration-200"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
